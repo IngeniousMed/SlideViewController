@@ -137,7 +137,8 @@
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
-    
+	
+	[super viewDidLoad];
     if (![self.delegate respondsToSelector:@selector(configureSearchDatasourceWithString:)] || ![self.delegate respondsToSelector:@selector(searchDatasource)]) {
         _searchBar.hidden = YES;
         _tableView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 460.0f);
